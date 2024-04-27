@@ -1,5 +1,3 @@
-// TODO: convert color to hsl
-
 const lightLabel = "hsl(0 0% 100% / 0.9)";
 const darkLabel = "hsl(0 0% 0% / 0.9)";
 
