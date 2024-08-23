@@ -12,7 +12,7 @@ import { candies } from "./constants";
 import { CandyPosition, eqCandyPosition } from "./types";
 import { updateArray, voidAsync, wait } from "./utils";
 import { useCandyAppearance } from "./store";
-import { Move, getMovesGraphBFS, getCompletionMovesPath } from "./analyseGame";
+import { getMovesGraphBFS, getCompletionMovesPath } from "./analyseGame";
 
 const clickTube = (tubeIndex: number) => {
   const tubeElement = document.getElementsByClassName("tube")?.[
@@ -210,7 +210,7 @@ function App() {
             columnGap: "15px",
           }}
         >
-          {transitionalCandies.map((x, i) => (
+          {transitionalCandies.map((x) => (
             <TransitionalCandy
               key={`${x.from.tubeIndex}-${x.from.candyIndex}-${x.value}`}
               stackIndex={x.stackIndex}
@@ -346,11 +346,6 @@ const Tube = (props: {
       {props.tubeIndex + 1}
     </div>
   );
-};
-
-const floatingStackOffset = {
-  top: 5,
-  left: 2,
 };
 
 const floatingCandyTxDuration = 100;
