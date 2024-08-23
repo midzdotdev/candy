@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+# Candy Sort Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based implementation of the popular Candy Sort puzzle game.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Candy Sort is a puzzle game where the player must sort candies of different colors into tubes. The goal is to group all candies of the same color together in a single tube. This project implements the game using React and TypeScript, featuring smooth animations and a clean user interface.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Interactive gameplay with clickable tubes
+- Smooth candy movement animations
+- Undo functionality
+- New game generation
+- Ability to add extra tubes
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- React
+- TypeScript
+- CSS
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## How to Play
+
+1. Click on a tube to select it.
+2. Click on another tube to move the top candy from the selected tube to the target tube.
+3. Continue moving candies until all candies of the same color are grouped together in single tubes.
+4. Use the "Undo" button to revert moves if needed.
+5. Click "New Game" to start a fresh puzzle.
+6. Use "Add Tube" to include an empty tube for more strategic options.
+
+## Installation and Running
+
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Run the development server:
+   ```
+   npm start
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to play the game.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
